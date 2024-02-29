@@ -45,7 +45,7 @@ public class Gifu {
 
     }
 
-    public ArrayList getEnrollmentsCourse(Course, course){
+    public ArrayList getEnrollmentsCourse(Course course){
         return null;
     }
 
