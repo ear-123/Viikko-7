@@ -29,6 +29,7 @@ public class Gifu {
         for (Course course : courses) {
             int i = 0;
             System.out.println(i + ") " + course.getId() + " " + course.getName());
+            i++;
         }
 
     }
