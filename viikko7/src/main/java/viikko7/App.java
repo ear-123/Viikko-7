@@ -28,20 +28,35 @@ public class App
                 switch (option) {
                     case 1:
                         System.out.println("Anna kurssin nimi:");
-                        String name = scan.nextLine();
+                        String nameNewCourse = scan.nextLine();
 
                         System.out.println("Anna kurssin ID:");
-                        String id = scan.nextLine();
+                        String idNewCourse = scan.nextLine();
 
                         System.out.println("Anna kurssin maksimi opiskelijamäärä:");
                         int maxNumberOfStudents = Integer.parseInt(scan.nextLine());
 
-                        gifu.addCourse(new Course(maxNumberOfStudents, name, id));
+                        gifu.addCourse(new Course(maxNumberOfStudents, nameNewCourse, idNewCourse));
                         break;
 
                     case 3:
                         gifu.listCourses();
                         break;
+
+                    case 2:
+                        System.out.println("Anna opiskelijan nimi:");
+                        String nameNewStudent = scan.nextLine();
+
+                        System.out.println("Anna opiskelijan opiskelijanumero:");
+                        String idNewStudent = scan.nextLine();
+
+                        gifu.addStudent(new Student(nameNewStudent, idNewStudent));
+                        break;
+
+                    case 4:
+
+                        break;
+
                     case 0:
                         exit = true;
                         break;
