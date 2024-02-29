@@ -43,7 +43,11 @@ public class Gifu {
     }
 
     public void listStudents(){
-
+        int i = 0;
+        for (Student student : students) {
+            System.out.println(i + ") " + student.getId() + " " + student.getName());
+            i++;
+        }
     }
 
     public void enrollStudent(Student student, Course course){

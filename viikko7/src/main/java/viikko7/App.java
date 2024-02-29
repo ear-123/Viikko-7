@@ -54,7 +54,7 @@ public class App
                         break;
 
                     case 4:
-
+                        gifu.listStudents();
                         break;
 
                     case 0:
