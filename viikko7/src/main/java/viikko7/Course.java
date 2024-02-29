@@ -12,10 +12,10 @@ public class Course implements PrintInfo {
     }
 
     public String getName(){
-        return null;
+        return this.name;
     }
 
     public String getId(){
-        return null;
+        return this.id;
     }
 }

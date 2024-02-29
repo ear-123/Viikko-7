@@ -38,6 +38,9 @@ public class App
 
                         gifu.addCourse(new Course(maxNumberOfStudents, name, id));
                         break;
+
+                    case 3:
+                        gifu.listCourses();
                     case 0:
                         exit = true;
                         break;

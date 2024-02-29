@@ -5,10 +5,10 @@ public class Student implements PrintInfo {
     private String id;
 
     public String getName(){
-        return null;
+        return this.name;
     }
 
     public String getId(){
-        return null;
+        return this.id;
     }
 }
