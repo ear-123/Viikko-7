@@ -26,8 +26,8 @@ public class Gifu {
     }
 
     public void listCourses(){
+        int i = 0;
         for (Course course : courses) {
-            int i = 0;
             System.out.println(i + ") " + course.getId() + " " + course.getName());
             i++;
         }

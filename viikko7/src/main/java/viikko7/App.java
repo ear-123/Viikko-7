@@ -41,6 +41,7 @@ public class App
 
                     case 3:
                         gifu.listCourses();
+                        break;
                     case 0:
                         exit = true;
                         break;
