@@ -35,7 +35,7 @@ public class Gifu {
     }
 
     public void addStudent(Student student){
-
+        students.add(student);
     }
 
     public Student getStudent(int id){
