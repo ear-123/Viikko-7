@@ -65,9 +65,10 @@ public class App
                         System.out.println("Minkä opiskelijan haluat lisätä kurssille? Syötä opiskelijan numero:");
                         int StudentToAdd = Integer.parseInt(scan.nextLine());
                         gifu.enrollStudent(gifu.getStudent(StudentToAdd), gifu.getCourse(courseToAddTo));
-                    
+                        break;
+
                     case 7:
-                        
+
                     case 0:
                         exit = true;
                         break;
