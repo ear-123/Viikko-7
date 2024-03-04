@@ -77,8 +77,25 @@ public class App
                             System.out.println("Anna arvosana opiskelijalle " + enrollment.getStudent().getId() + " " + enrollment.getStudent().getName());
                             enrollment.gradeCourse(Integer.parseInt(scan.nextLine()));
                         }
+
+
                         break;
                     case 7:
+                        break;
+
+                    case 8:
+                        gifu.listStudents();
+                        System.out.println("Minkä opiskelijan arvosanat haluat listata? Syötä opiskelijan numero:");
+                        Student studentToShowGrades = gifu.getStudent(Integer.parseInt(scan.nextLine()));
+
+                        ArrayList<Enrollment> studentGrades = gifu.getEnrollmentsStudent(studentToShowGrades);
+
+                        System.out.println("Opiskelijan " + studentToShowGrades.getId() + " " + studentToShowGrades.getName() + " arvosanat:");
+                        for (Enrollment enrollment : studentGrades) {
+                            System.out.println(enrollment.getCourse().getId() + " " + enrollment.getCourse().getName() + ", arvosana: " + enrollment.getGrade());
+                        }
+
+
                         break;
                     case 0:
                         exit = true;
