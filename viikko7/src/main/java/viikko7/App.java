@@ -97,6 +97,17 @@ public class App
 
 
                         break;
+                    case 9:
+                        ArrayList<Course> courses = gifu.getCourses();
+                        for (Course course : courses) {
+                            System.out.println(course.getId()+ " " + course.getName());
+
+                            ArrayList<Enrollment> courseEnrollments = gifu.getEnrollmentsCourse(course);
+                            for (Enrollment enrollment : courseEnrollments) {
+                                System.out.println(enrollment.getStudent().getId() + " " + enrollment.getStudent().getName() + ", arvosana: " + enrollment.getGrade());
+                            }
+                        }
+                    break;
                     case 0:
                         exit = true;
                         break;
