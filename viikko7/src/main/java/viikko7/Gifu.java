@@ -21,7 +21,7 @@ public class Gifu {
         return courses.get(id);
     }
 
-    public ArrayList<Course> gerCourses(){
+    public ArrayList<Course> getCourses(){
         return courses;
     }
 
@@ -54,11 +54,17 @@ public class Gifu {
         enrollments.add(new Enrollment(student, course));
     }
 
-    public ArrayList<Course> getEnrollmentsCourse(Course course){
-        return null;
+    public ArrayList<Enrollment> getEnrollmentsCourse(Course course){
+        ArrayList<Enrollment> returnEnrollments = new ArrayList<>();
+        for (Enrollment enrollment : enrollments) {
+            if (enrollment.getCourse() == course) {
+                returnEnrollments.add(enrollment);
+            }
+        }
+        return returnEnrollments;
     }
 
-    public ArrayList<Student> getEnrollmentsStudent(Student student){
+    public ArrayList<Enrollmente> getEnrollmentsStudent(Student student){
         return null;
     }
 }

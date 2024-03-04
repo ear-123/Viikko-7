@@ -67,8 +67,16 @@ public class App
                         gifu.enrollStudent(gifu.getStudent(StudentToAdd), gifu.getCourse(courseToAddTo));
                         break;
 
-                    case 7:
+                    case 6:
+                        gifu.listCourses();
+                        System.out.println("Minkä kurssin haluat arvostella? Syötä kurssin numero:");
+                        int courseToGrade = Integer.parseInt(scan.nextLine());
+                        gifu.
 
+
+                        break;
+                    case 7:
+                        break;
                     case 0:
                         exit = true;
                         break;
