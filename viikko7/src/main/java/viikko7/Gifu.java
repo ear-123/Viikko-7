@@ -6,7 +6,7 @@ public class Gifu {
     private String university;
     private ArrayList<Student> students = new ArrayList<>();
     private ArrayList<Course> courses = new ArrayList<>();
-    
+    private ArrayList<Enrollment> enrollments = new ArrayList<>();
 
     public Gifu(String university){
         this.university = university;
@@ -18,11 +18,11 @@ public class Gifu {
     }
 
     public Course getCourse(int id){
-        return null;
+        return courses.get(id);
     }
 
-    public ArrayList gerCourses(){
-        return null;
+    public ArrayList<Course> gerCourses(){
+        return courses;
     }
 
     public void listCourses(){
@@ -39,7 +39,7 @@ public class Gifu {
     }
 
     public Student getStudent(int id){
-        return null;
+        return students.get(id);
     }
 
     public void listStudents(){
@@ -51,14 +51,14 @@ public class Gifu {
     }
 
     public void enrollStudent(Student student, Course course){
-
+        enrollments.add(new Enrollment(student, course));
     }
 
-    public ArrayList getEnrollmentsCourse(Course course){
+    public ArrayList<Course> getEnrollmentsCourse(Course course){
         return null;
     }
 
-    public ArrayList getEnrollmentsStudent(Student student){
+    public ArrayList<Student> getEnrollmentsStudent(Student student){
         return null;
     }
 }

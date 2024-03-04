@@ -57,6 +57,17 @@ public class App
                         gifu.listStudents();
                         break;
 
+                    case 5:
+                        gifu.listCourses();
+                        System.out.println("Mille kurssille haluat lisätä opiskelijan? Syötä kurssin numero:");
+                        int courseToAddTo = Integer.parseInt(scan.nextLine());
+                        gifu.listStudents();
+                        System.out.println("Minkä opiskelijan haluat lisätä kurssille? Syötä opiskelijan numero:");
+                        int StudentToAdd = Integer.parseInt(scan.nextLine());
+                        gifu.enrollStudent(gifu.getStudent(StudentToAdd), gifu.getCourse(courseToAddTo));
+                    
+                    case 7:
+                        
                     case 0:
                         exit = true;
                         break;
