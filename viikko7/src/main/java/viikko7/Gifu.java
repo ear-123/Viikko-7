@@ -64,7 +64,7 @@ public class Gifu {
         return returnEnrollments;
     }
 
-    public ArrayList<Enrollmente> getEnrollmentsStudent(Student student){
+    public ArrayList<Enrollment> getEnrollmentsStudent(Student student){
         return null;
     }
 }
