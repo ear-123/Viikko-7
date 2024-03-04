@@ -72,7 +72,7 @@ public class App
                         System.out.println("Minkä kurssin haluat arvostella? Syötä kurssin numero:");
                         int courseToGrade = Integer.parseInt(scan.nextLine());
                         
-
+                        ArrayList<Enrollment> ssk = gifu.getEnrollmentsCourse(gifu.getCourse(courseToGrade));
 
                         break;
                     case 7:

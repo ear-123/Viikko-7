@@ -55,16 +55,22 @@ public class Gifu {
     }
 
     public ArrayList<Enrollment> getEnrollmentsCourse(Course course){
-        ArrayList<Enrollment> returnEnrollments = new ArrayList<>();
+        ArrayList<Enrollment> returnStudentsInCourse = new ArrayList<>();
         for (Enrollment enrollment : enrollments) {
             if (enrollment.getCourse() == course) {
-                returnEnrollments.add(enrollment);
+                returnStudentsInCourse.add(enrollment);
             }
         }
-        return returnEnrollments;
+        return returnStudentsInCourse;
     }
 
     public ArrayList<Enrollment> getEnrollmentsStudent(Student student){
-        return null;
+        ArrayList<Enrollment> returnStudentCourses = new ArrayList<>();
+        for (Enrollment enrollment : enrollments) {
+            if (enrollment.getStudent() == student) {
+                returnStudentCourses.add(enrollment);
+            }
+        }
+        return returnStudentCourses;
     }
 }
